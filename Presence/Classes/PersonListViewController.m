@@ -111,7 +111,10 @@
 	PersonDetailViewController *personDetailViewController = [[PersonDetailViewController alloc]
 															  initWithNibName:@"PersonDetailViewController"
 															  bundle:nil];
-	personDetailViewController.person = [self.personList objectAtIndex:indexPath.row];
+	MPerson *person = [self.personList objectAtIndex:indexPath.row];
+	personDetailViewController.person = person;
+	personDetailViewController.tableView.tableHeaderView = [[[UIImageView alloc] initWithImage:person.image] autorelease];
+	personDetailViewController.title = person.displayName;
 	[self.navigationController pushViewController:personDetailViewController animated:YES];
 	[personDetailViewController release];
 }

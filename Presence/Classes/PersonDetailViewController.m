@@ -94,41 +94,40 @@
 // I see, this method is called after cell is created and positioned. Hence we can use the cell frame property.
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
 	CGRect frame = cell.bounds;
-	NSLog(@"willDisplayCell:%d CGRect:(%f, %f)", indexPath.row, frame.size.width, frame.size.height);
 	frame.origin.x += 10;
 	frame.origin.y += 10;
 	frame.size.width -= 40;
 	frame.size.height -= 20;
-	UILabel *myLabel = [[[UILabel alloc] initWithFrame:frame] autorelease];
-	myLabel.lineBreakMode = UILineBreakModeWordWrap;
-	myLabel.numberOfLines = 0;
+	UILabel *myLabel = (UILabel *)[cell viewWithTag:100];
+	myLabel.frame = frame;
 	myLabel.text = [self.person.statuses objectAtIndex:indexPath.row];
-	myLabel.font = [UIFont systemFontOfSize:14];
-	[cell.contentView addSubview:myLabel];
 }
 
+//Calculates the height of the cell. This method is called at the beginning of display of the table.
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"heightForRowAtIndexPath:%d width:%f", indexPath.row, tableView.frame.size.width);
 	NSString *str = [self.person.statuses objectAtIndex:indexPath.row];
 	UIFont *font = [UIFont systemFontOfSize:14];
 	CGSize withinSize = CGSizeMake(tableView.frame.size.width-40.0, 10000);
 	CGSize size = [str sizeWithFont:font constrainedToSize:withinSize lineBreakMode:UILineBreakModeWordWrap];
-	NSLog(@"height of %d = %f", indexPath.row, size.height);
-	if (indexPath.row == 8) NSLog(@"%@", str);
 	return size.height + 20.0;
 }
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"cellForRowAtIndexPath:%d", indexPath.row);
     static NSString *CellIdentifier = @"Statuses";
+	static NSInteger LabelTag = 100;
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+		UILabel *myLabel = [[[UILabel alloc] initWithFrame:CGRectZero] autorelease];
+		myLabel.userInteractionEnabled = NO;
+		myLabel.lineBreakMode = UILineBreakModeWordWrap;
+		myLabel.numberOfLines = 0;
+		myLabel.tag = LabelTag;
+		myLabel.font = [UIFont systemFontOfSize:14];
+		[cell.contentView addSubview:myLabel];
     }
-    
-    // Set up the cell...
 	
     return cell;
 }
