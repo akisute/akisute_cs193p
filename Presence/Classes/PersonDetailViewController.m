@@ -129,9 +129,6 @@
     }
     
     // Set up the cell...
-//	if (self.person != nil) {
-//		cell.text = [self.person.statuses objectAtIndex:indexPath.row];
-//	}
 	
     return cell;
 }
