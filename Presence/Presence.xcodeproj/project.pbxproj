@@ -10,15 +10,22 @@
 		0EA43D200EE2EC3E00E0CC2D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0EA43D1F0EE2EC3E00E0CC2D /* Localizable.strings */; };
 		0EA43D240EE2ECAB00E0CC2D /* PersonListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EA43D230EE2ECAB00E0CC2D /* PersonListViewController.xib */; };
 		0EA43D260EE2ECB700E0CC2D /* PersonDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EA43D250EE2ECB700E0CC2D /* PersonDetailViewController.xib */; };
-		0EA43D2A0EE2ECFE00E0CC2D /* PersonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA43D290EE2ECFE00E0CC2D /* PersonListViewController.m */; };
-		0EA43D390EE3F74D00E0CC2D /* PersonDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA43D380EE3F74D00E0CC2D /* PersonDetailViewController.m */; };
 		0EA43D3E0EE3FA0B00E0CC2D /* TwitterUsers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EA43D3D0EE3FA0B00E0CC2D /* TwitterUsers.plist */; };
-		0EA43D440EE3FDC800E0CC2D /* TwitterHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA43D420EE3FDC800E0CC2D /* TwitterHelper.m */; };
-		0EA43D610EE3FFF700E0CC2D /* MPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA43D600EE3FFF700E0CC2D /* MPerson.m */; };
-		0EA43F7A0EE588A000E0CC2D /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA43F750EE588A000E0CC2D /* NSObject+SBJSON.m */; };
-		0EA43F7B0EE588A000E0CC2D /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA43F770EE588A000E0CC2D /* NSString+SBJSON.m */; };
-		0EA43F7C0EE588A000E0CC2D /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA43F790EE588A000E0CC2D /* SBJSON.m */; };
-		1D3623260D0F684500981E51 /* PresenceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* PresenceAppDelegate.m */; };
+		0EC0B0FE0EEA4F200021647E /* PersonDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0B0EA0EEA4F200021647E /* PersonDetailViewController.m */; };
+		0EC0B0FF0EEA4F200021647E /* PersonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0B0EC0EEA4F200021647E /* PersonListViewController.m */; };
+		0EC0B1000EEA4F200021647E /* PresenceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0B0EE0EEA4F200021647E /* PresenceAppDelegate.m */; };
+		0EC0B1010EEA4F200021647E /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0B0F30EEA4F200021647E /* NSObject+SBJSON.m */; };
+		0EC0B1020EEA4F200021647E /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0B0F50EEA4F200021647E /* NSString+SBJSON.m */; };
+		0EC0B1030EEA4F200021647E /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0B0F70EEA4F200021647E /* SBJSON.m */; };
+		0EC0B10B0EEA4F5C0021647E /* MPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0B1080EEA4F5C0021647E /* MPerson.m */; };
+		0EC0B10C0EEA4F5C0021647E /* TwitterHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0B10A0EEA4F5C0021647E /* TwitterHelper.m */; };
+		0EC0B1220EEA54F80021647E /* MPersonDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0B1210EEA54F80021647E /* MPersonDataSource.m */; };
+		0EC0B1360EEA5E490021647E /* THOFetchTimeLineForUserName.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0B1350EEA5E490021647E /* THOFetchTimeLineForUserName.m */; };
+		0EC0B13E0EEA64460021647E /* THOUpdateStatusForUserName.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0B13D0EEA64460021647E /* THOUpdateStatusForUserName.m */; };
+		0EC0B1590EEA72940021647E /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0B1520EEA72940021647E /* HttpClient.m */; };
+		0EC0B15A0EEA72940021647E /* ImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0B1540EEA72940021647E /* ImageDownloader.m */; };
+		0EC0B15B0EEA72940021647E /* ImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0B1560EEA72940021647E /* ImageStore.m */; };
+		0EC0B15C0EEA72940021647E /* StringHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0B1580EEA72940021647E /* StringHelper.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -30,25 +37,39 @@
 		0EA43D1F0EE2EC3E00E0CC2D /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		0EA43D230EE2ECAB00E0CC2D /* PersonListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonListViewController.xib; sourceTree = "<group>"; };
 		0EA43D250EE2ECB700E0CC2D /* PersonDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonDetailViewController.xib; sourceTree = "<group>"; };
-		0EA43D280EE2ECFE00E0CC2D /* PersonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonListViewController.h; sourceTree = "<group>"; };
-		0EA43D290EE2ECFE00E0CC2D /* PersonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonListViewController.m; sourceTree = "<group>"; };
-		0EA43D370EE3F74D00E0CC2D /* PersonDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonDetailViewController.h; sourceTree = "<group>"; };
-		0EA43D380EE3F74D00E0CC2D /* PersonDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonDetailViewController.m; sourceTree = "<group>"; };
 		0EA43D3D0EE3FA0B00E0CC2D /* TwitterUsers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TwitterUsers.plist; sourceTree = "<group>"; };
-		0EA43D420EE3FDC800E0CC2D /* TwitterHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterHelper.m; sourceTree = "<group>"; };
-		0EA43D430EE3FDC800E0CC2D /* TwitterHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterHelper.h; sourceTree = "<group>"; };
-		0EA43D5F0EE3FFF700E0CC2D /* MPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPerson.h; sourceTree = "<group>"; };
-		0EA43D600EE3FFF700E0CC2D /* MPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPerson.m; sourceTree = "<group>"; };
-		0EA43F730EE588A000E0CC2D /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
-		0EA43F740EE588A000E0CC2D /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
-		0EA43F750EE588A000E0CC2D /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
-		0EA43F760EE588A000E0CC2D /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
-		0EA43F770EE588A000E0CC2D /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
-		0EA43F780EE588A000E0CC2D /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
-		0EA43F790EE588A000E0CC2D /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		0EC0B0E90EEA4F200021647E /* PersonDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonDetailViewController.h; sourceTree = "<group>"; };
+		0EC0B0EA0EEA4F200021647E /* PersonDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonDetailViewController.m; sourceTree = "<group>"; };
+		0EC0B0EB0EEA4F200021647E /* PersonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonListViewController.h; sourceTree = "<group>"; };
+		0EC0B0EC0EEA4F200021647E /* PersonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonListViewController.m; sourceTree = "<group>"; };
+		0EC0B0ED0EEA4F200021647E /* PresenceAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresenceAppDelegate.h; sourceTree = "<group>"; };
+		0EC0B0EE0EEA4F200021647E /* PresenceAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresenceAppDelegate.m; sourceTree = "<group>"; };
+		0EC0B0F10EEA4F200021647E /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		0EC0B0F20EEA4F200021647E /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		0EC0B0F30EEA4F200021647E /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		0EC0B0F40EEA4F200021647E /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		0EC0B0F50EEA4F200021647E /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		0EC0B0F60EEA4F200021647E /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		0EC0B0F70EEA4F200021647E /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		0EC0B1070EEA4F5C0021647E /* MPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPerson.h; sourceTree = "<group>"; };
+		0EC0B1080EEA4F5C0021647E /* MPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPerson.m; sourceTree = "<group>"; };
+		0EC0B1090EEA4F5C0021647E /* TwitterHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterHelper.h; sourceTree = "<group>"; };
+		0EC0B10A0EEA4F5C0021647E /* TwitterHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterHelper.m; sourceTree = "<group>"; };
+		0EC0B1200EEA54F80021647E /* MPersonDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPersonDataSource.h; sourceTree = "<group>"; };
+		0EC0B1210EEA54F80021647E /* MPersonDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPersonDataSource.m; sourceTree = "<group>"; };
+		0EC0B1340EEA5E490021647E /* THOFetchTimeLineForUserName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THOFetchTimeLineForUserName.h; path = ../THOFetchTimeLineForUserName.h; sourceTree = "<group>"; };
+		0EC0B1350EEA5E490021647E /* THOFetchTimeLineForUserName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THOFetchTimeLineForUserName.m; path = ../THOFetchTimeLineForUserName.m; sourceTree = "<group>"; };
+		0EC0B13C0EEA64460021647E /* THOUpdateStatusForUserName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THOUpdateStatusForUserName.h; sourceTree = "<group>"; };
+		0EC0B13D0EEA64460021647E /* THOUpdateStatusForUserName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THOUpdateStatusForUserName.m; sourceTree = "<group>"; };
+		0EC0B1510EEA72940021647E /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
+		0EC0B1520EEA72940021647E /* HttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClient.m; sourceTree = "<group>"; };
+		0EC0B1530EEA72940021647E /* ImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloader.h; sourceTree = "<group>"; };
+		0EC0B1540EEA72940021647E /* ImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloader.m; sourceTree = "<group>"; };
+		0EC0B1550EEA72940021647E /* ImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageStore.h; sourceTree = "<group>"; };
+		0EC0B1560EEA72940021647E /* ImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageStore.m; sourceTree = "<group>"; };
+		0EC0B1570EEA72940021647E /* StringHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringHelper.h; sourceTree = "<group>"; };
+		0EC0B1580EEA72940021647E /* StringHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringHelper.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D3623240D0F684500981E51 /* PresenceAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresenceAppDelegate.h; sourceTree = "<group>"; };
-		1D3623250D0F684500981E51 /* PresenceAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresenceAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* Presence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Presence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -75,33 +96,95 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0EA43F720EE588A000E0CC2D /* JSON */,
-				0EA43D420EE3FDC800E0CC2D /* TwitterHelper.m */,
-				0EA43D430EE3FDC800E0CC2D /* TwitterHelper.h */,
-				1D3623240D0F684500981E51 /* PresenceAppDelegate.h */,
-				1D3623250D0F684500981E51 /* PresenceAppDelegate.m */,
-				0EA43D280EE2ECFE00E0CC2D /* PersonListViewController.h */,
-				0EA43D290EE2ECFE00E0CC2D /* PersonListViewController.m */,
-				0EA43D370EE3F74D00E0CC2D /* PersonDetailViewController.h */,
-				0EA43D380EE3F74D00E0CC2D /* PersonDetailViewController.m */,
-				0EA43D5F0EE3FFF700E0CC2D /* MPerson.h */,
-				0EA43D600EE3FFF700E0CC2D /* MPerson.m */,
+				0EC0B0E80EEA4F200021647E /* Controllers */,
+				0EC0B0EF0EEA4F200021647E /* Libraries */,
+				0EC0B0FD0EEA4F200021647E /* Views */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		0EA43F720EE588A000E0CC2D /* JSON */ = {
+		0EC0B0E80EEA4F200021647E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0EA43F730EE588A000E0CC2D /* JSON.h */,
-				0EA43F740EE588A000E0CC2D /* NSObject+SBJSON.h */,
-				0EA43F750EE588A000E0CC2D /* NSObject+SBJSON.m */,
-				0EA43F760EE588A000E0CC2D /* NSString+SBJSON.h */,
-				0EA43F770EE588A000E0CC2D /* NSString+SBJSON.m */,
-				0EA43F780EE588A000E0CC2D /* SBJSON.h */,
-				0EA43F790EE588A000E0CC2D /* SBJSON.m */,
+				0EC0B0E90EEA4F200021647E /* PersonDetailViewController.h */,
+				0EC0B0EA0EEA4F200021647E /* PersonDetailViewController.m */,
+				0EC0B0EB0EEA4F200021647E /* PersonListViewController.h */,
+				0EC0B0EC0EEA4F200021647E /* PersonListViewController.m */,
+				0EC0B0ED0EEA4F200021647E /* PresenceAppDelegate.h */,
+				0EC0B0EE0EEA4F200021647E /* PresenceAppDelegate.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0EC0B0EF0EEA4F200021647E /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				0EC0B1500EEA72940021647E /* ImageStore */,
+				0EC0B1060EEA4F5C0021647E /* Twitter */,
+				0EC0B0F00EEA4F200021647E /* JSON */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		0EC0B0F00EEA4F200021647E /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				0EC0B0F20EEA4F200021647E /* NSObject+SBJSON.h */,
+				0EC0B0F30EEA4F200021647E /* NSObject+SBJSON.m */,
+				0EC0B0F40EEA4F200021647E /* NSString+SBJSON.h */,
+				0EC0B0F50EEA4F200021647E /* NSString+SBJSON.m */,
+				0EC0B0F60EEA4F200021647E /* SBJSON.h */,
+				0EC0B0F70EEA4F200021647E /* SBJSON.m */,
+				0EC0B0F10EEA4F200021647E /* JSON.h */,
 			);
 			path = JSON;
+			sourceTree = "<group>";
+		};
+		0EC0B0FD0EEA4F200021647E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0EC0B1060EEA4F5C0021647E /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				0EC0B1370EEA634D0021647E /* Operations */,
+				0EC0B1090EEA4F5C0021647E /* TwitterHelper.h */,
+				0EC0B10A0EEA4F5C0021647E /* TwitterHelper.m */,
+				0EC0B1070EEA4F5C0021647E /* MPerson.h */,
+				0EC0B1080EEA4F5C0021647E /* MPerson.m */,
+				0EC0B1200EEA54F80021647E /* MPersonDataSource.h */,
+				0EC0B1210EEA54F80021647E /* MPersonDataSource.m */,
+			);
+			path = Twitter;
+			sourceTree = "<group>";
+		};
+		0EC0B1370EEA634D0021647E /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				0EC0B1340EEA5E490021647E /* THOFetchTimeLineForUserName.h */,
+				0EC0B1350EEA5E490021647E /* THOFetchTimeLineForUserName.m */,
+				0EC0B13C0EEA64460021647E /* THOUpdateStatusForUserName.h */,
+				0EC0B13D0EEA64460021647E /* THOUpdateStatusForUserName.m */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		0EC0B1500EEA72940021647E /* ImageStore */ = {
+			isa = PBXGroup;
+			children = (
+				0EC0B1510EEA72940021647E /* HttpClient.h */,
+				0EC0B1520EEA72940021647E /* HttpClient.m */,
+				0EC0B1530EEA72940021647E /* ImageDownloader.h */,
+				0EC0B1540EEA72940021647E /* ImageDownloader.m */,
+				0EC0B1550EEA72940021647E /* ImageStore.h */,
+				0EC0B1560EEA72940021647E /* ImageStore.m */,
+				0EC0B1570EEA72940021647E /* StringHelper.h */,
+				0EC0B1580EEA72940021647E /* StringHelper.m */,
+			);
+			path = ImageStore;
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -214,14 +297,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				1D3623260D0F684500981E51 /* PresenceAppDelegate.m in Sources */,
-				0EA43D2A0EE2ECFE00E0CC2D /* PersonListViewController.m in Sources */,
-				0EA43D390EE3F74D00E0CC2D /* PersonDetailViewController.m in Sources */,
-				0EA43D440EE3FDC800E0CC2D /* TwitterHelper.m in Sources */,
-				0EA43D610EE3FFF700E0CC2D /* MPerson.m in Sources */,
-				0EA43F7A0EE588A000E0CC2D /* NSObject+SBJSON.m in Sources */,
-				0EA43F7B0EE588A000E0CC2D /* NSString+SBJSON.m in Sources */,
-				0EA43F7C0EE588A000E0CC2D /* SBJSON.m in Sources */,
+				0EC0B0FE0EEA4F200021647E /* PersonDetailViewController.m in Sources */,
+				0EC0B0FF0EEA4F200021647E /* PersonListViewController.m in Sources */,
+				0EC0B1000EEA4F200021647E /* PresenceAppDelegate.m in Sources */,
+				0EC0B1010EEA4F200021647E /* NSObject+SBJSON.m in Sources */,
+				0EC0B1020EEA4F200021647E /* NSString+SBJSON.m in Sources */,
+				0EC0B1030EEA4F200021647E /* SBJSON.m in Sources */,
+				0EC0B10B0EEA4F5C0021647E /* MPerson.m in Sources */,
+				0EC0B10C0EEA4F5C0021647E /* TwitterHelper.m in Sources */,
+				0EC0B1220EEA54F80021647E /* MPersonDataSource.m in Sources */,
+				0EC0B1360EEA5E490021647E /* THOFetchTimeLineForUserName.m in Sources */,
+				0EC0B13E0EEA64460021647E /* THOUpdateStatusForUserName.m in Sources */,
+				0EC0B1590EEA72940021647E /* HttpClient.m in Sources */,
+				0EC0B15A0EEA72940021647E /* ImageDownloader.m in Sources */,
+				0EC0B15B0EEA72940021647E /* ImageStore.m in Sources */,
+				0EC0B15C0EEA72940021647E /* StringHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
