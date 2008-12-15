@@ -51,49 +51,50 @@
 
 - (void)reloadPerson:(MPerson *)person
 {
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+	
 	NSArray *jsonList = [TwitterHelper fetchTimelineForUsername:person.screen_name];
 	if (!jsonList)
 	{
+		person.isLoaded = NO;
+		
 		if ([delegate respondsToSelector:@selector(mPersonDataSourceDidFailLoad)])
 		{
-//			[delegate mPersonDataSourceDidFailLoad];
 			[delegate performSelectorOnMainThread:@selector(mPersonDataSourceDidFailLoad) withObject:nil waitUntilDone:YES];
 		}
-	}
-	
-	for (int i = 0; i < [jsonList count]; i++)
+	} else
 	{
-		id dict = [jsonList objectAtIndex:i];
-		id userDict = [dict objectForKey:@"user"];
-		
-		if (person.name == nil)
+		for (int i = 0; i < [jsonList count]; i++)
 		{
-			person.name = [userDict objectForKey:@"name"];
+			id dict = [jsonList objectAtIndex:i];
+			id userDict = [dict objectForKey:@"user"];
+			
+			if (person.name == nil)
+			{
+				person.name = [userDict objectForKey:@"name"];
+			}
+			
+			if (person.profile_image_url == nil)
+			{
+				person.profile_image_url = [userDict objectForKey:@"profile_image_url"];
+			}
+			
+			if (person.texts == nil)
+			{
+				person.texts = [NSMutableArray arrayWithCapacity:10];
+			}
+			NSString *text = [dict objectForKey:@"text"];
+			[person.texts addObject:text];
 		}
 		
-		if (person.profile_image_url == nil)
-		{
-			person.profile_image_url = [userDict objectForKey:@"profile_image_url"];
-		}
+		person.isLoaded = YES;
 		
-		if (person.texts == nil)
+		if ([delegate respondsToSelector:@selector(mPersonDataSourceDidFinishLoadOfPerson:)])
 		{
-			person.texts = [NSMutableArray arrayWithCapacity:10];
+			[delegate performSelectorOnMainThread:@selector(mPersonDataSourceDidFinishLoadOfPerson:) withObject:person waitUntilDone:YES];
 		}
-		NSString *text = [dict objectForKey:@"text"];
-		[person.texts addObject:text];
-    }
-	
-	person.isLoaded = YES;
-	
-	if ([delegate respondsToSelector:@selector(mPersonDataSourceDidFinishLoadOfPerson:)])
-	{
-//		[delegate mPersonDataSourceDidFinishLoadOfPerson:person];
-		[delegate performSelectorOnMainThread:@selector(mPersonDataSourceDidFinishLoadOfPerson:) withObject:person waitUntilDone:YES];
 	}
-	
-	[pool drain];
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
 - (void)reload
@@ -113,7 +114,6 @@
 									 object:person];
 		[self.operationQueue addOperation:op];
 		[op release];
-//		[self reloadPerson:person];
 	}
 }
 

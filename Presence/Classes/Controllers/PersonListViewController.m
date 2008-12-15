@@ -104,7 +104,7 @@
 																  bundle:nil];
 		personDetailViewController.person = person;
 //		personDetailViewController.tableView.tableHeaderView = nil;
-		personDetailViewController.title = person.name;
+		personDetailViewController.title = (person.name) ? person.name : person.screen_name;
 		[self.navigationController pushViewController:personDetailViewController animated:YES];
 		[personDetailViewController release];
 	}
@@ -124,7 +124,6 @@
 
 - (void)mPersonDataSourceDidFinishLoadOfPerson:(MPerson *)person
 {
-	NSLog(@"mPersonDataSourceDidFinishLoadOfPerson");
 	[self.tableView reloadData];
 }
 
@@ -132,7 +131,6 @@
 
 - (void)imageStoreDidGetNewImage:(ImageStore*)sender url:(NSString*)url
 {
-	NSLog(@"abesi");
 	[self.tableView reloadData];
 }
 

@@ -19,10 +19,6 @@
 @synthesize texts;
 @synthesize isLoaded;
 
-- (NSString *)name {
-	return (name) ? name : screen_name;
-}
-
 #pragma mark Initialize and deallocation
 
 - (id)initWithUserName:(NSString *)userName {
