@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E2C40E30EF9317300CD8DFD /* StatusComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2C40E20EF9317300CD8DFD /* StatusComposeViewController.m */; };
+		0E2C40E70EF9322300CD8DFD /* StatusComposeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E2C40E60EF9322300CD8DFD /* StatusComposeViewController.xib */; };
+		0E9407CE0EFCF4B400962331 /* InputAccountInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9407CD0EFCF4B400962331 /* InputAccountInfoViewController.m */; };
+		0E9407D30EFCF4EB00962331 /* InputAccountInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9407D20EFCF4EB00962331 /* InputAccountInfoViewController.xib */; };
+		0E94082F0EFE2C7900962331 /* TwitterAccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E94082E0EFE2C7900962331 /* TwitterAccountInfo.m */; };
+		0E9409010EFE409600962331 /* TwitterMessageSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9409000EFE409600962331 /* TwitterMessageSender.m */; };
 		0EA43D200EE2EC3E00E0CC2D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0EA43D1F0EE2EC3E00E0CC2D /* Localizable.strings */; };
 		0EA43D240EE2ECAB00E0CC2D /* PersonListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EA43D230EE2ECAB00E0CC2D /* PersonListViewController.xib */; };
 		0EA43D260EE2ECB700E0CC2D /* PersonDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EA43D250EE2ECB700E0CC2D /* PersonDetailViewController.xib */; };
@@ -20,8 +26,6 @@
 		0EC0B10B0EEA4F5C0021647E /* MPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0B1080EEA4F5C0021647E /* MPerson.m */; };
 		0EC0B10C0EEA4F5C0021647E /* TwitterHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0B10A0EEA4F5C0021647E /* TwitterHelper.m */; };
 		0EC0B1220EEA54F80021647E /* MPersonDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0B1210EEA54F80021647E /* MPersonDataSource.m */; };
-		0EC0B1360EEA5E490021647E /* THOFetchTimeLineForUserName.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0B1350EEA5E490021647E /* THOFetchTimeLineForUserName.m */; };
-		0EC0B13E0EEA64460021647E /* THOUpdateStatusForUserName.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0B13D0EEA64460021647E /* THOUpdateStatusForUserName.m */; };
 		0EC0B1590EEA72940021647E /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0B1520EEA72940021647E /* HttpClient.m */; };
 		0EC0B15A0EEA72940021647E /* ImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0B1540EEA72940021647E /* ImageDownloader.m */; };
 		0EC0B15B0EEA72940021647E /* ImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0B1560EEA72940021647E /* ImageStore.m */; };
@@ -35,6 +39,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E2C40E10EF9317300CD8DFD /* StatusComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusComposeViewController.h; sourceTree = "<group>"; };
+		0E2C40E20EF9317300CD8DFD /* StatusComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusComposeViewController.m; sourceTree = "<group>"; };
+		0E2C40E60EF9322300CD8DFD /* StatusComposeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatusComposeViewController.xib; sourceTree = "<group>"; };
+		0E9407CC0EFCF4B400962331 /* InputAccountInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputAccountInfoViewController.h; sourceTree = "<group>"; };
+		0E9407CD0EFCF4B400962331 /* InputAccountInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputAccountInfoViewController.m; sourceTree = "<group>"; };
+		0E9407D20EFCF4EB00962331 /* InputAccountInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputAccountInfoViewController.xib; sourceTree = "<group>"; };
+		0E94082D0EFE2C7900962331 /* TwitterAccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterAccountInfo.h; sourceTree = "<group>"; };
+		0E94082E0EFE2C7900962331 /* TwitterAccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterAccountInfo.m; sourceTree = "<group>"; };
+		0E9408FF0EFE409600962331 /* TwitterMessageSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterMessageSender.h; sourceTree = "<group>"; };
+		0E9409000EFE409600962331 /* TwitterMessageSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterMessageSender.m; sourceTree = "<group>"; };
 		0EA43D1F0EE2EC3E00E0CC2D /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		0EA43D230EE2ECAB00E0CC2D /* PersonListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonListViewController.xib; sourceTree = "<group>"; };
 		0EA43D250EE2ECB700E0CC2D /* PersonDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonDetailViewController.xib; sourceTree = "<group>"; };
@@ -58,10 +72,6 @@
 		0EC0B10A0EEA4F5C0021647E /* TwitterHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterHelper.m; sourceTree = "<group>"; };
 		0EC0B1200EEA54F80021647E /* MPersonDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPersonDataSource.h; sourceTree = "<group>"; };
 		0EC0B1210EEA54F80021647E /* MPersonDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPersonDataSource.m; sourceTree = "<group>"; };
-		0EC0B1340EEA5E490021647E /* THOFetchTimeLineForUserName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THOFetchTimeLineForUserName.h; path = ../THOFetchTimeLineForUserName.h; sourceTree = "<group>"; };
-		0EC0B1350EEA5E490021647E /* THOFetchTimeLineForUserName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THOFetchTimeLineForUserName.m; path = ../THOFetchTimeLineForUserName.m; sourceTree = "<group>"; };
-		0EC0B13C0EEA64460021647E /* THOUpdateStatusForUserName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THOUpdateStatusForUserName.h; sourceTree = "<group>"; };
-		0EC0B13D0EEA64460021647E /* THOUpdateStatusForUserName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THOUpdateStatusForUserName.m; sourceTree = "<group>"; };
 		0EC0B1510EEA72940021647E /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
 		0EC0B1520EEA72940021647E /* HttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClient.m; sourceTree = "<group>"; };
 		0EC0B1530EEA72940021647E /* ImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloader.h; sourceTree = "<group>"; };
@@ -108,10 +118,14 @@
 		0EC0B0E80EEA4F200021647E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0EC0B0E90EEA4F200021647E /* PersonDetailViewController.h */,
-				0EC0B0EA0EEA4F200021647E /* PersonDetailViewController.m */,
 				0EC0B0EB0EEA4F200021647E /* PersonListViewController.h */,
 				0EC0B0EC0EEA4F200021647E /* PersonListViewController.m */,
+				0EC0B0E90EEA4F200021647E /* PersonDetailViewController.h */,
+				0EC0B0EA0EEA4F200021647E /* PersonDetailViewController.m */,
+				0E2C40E10EF9317300CD8DFD /* StatusComposeViewController.h */,
+				0E2C40E20EF9317300CD8DFD /* StatusComposeViewController.m */,
+				0E9407CC0EFCF4B400962331 /* InputAccountInfoViewController.h */,
+				0E9407CD0EFCF4B400962331 /* InputAccountInfoViewController.m */,
 				0EC0B0ED0EEA4F200021647E /* PresenceAppDelegate.h */,
 				0EC0B0EE0EEA4F200021647E /* PresenceAppDelegate.m */,
 			);
@@ -152,26 +166,18 @@
 		0EC0B1060EEA4F5C0021647E /* Twitter */ = {
 			isa = PBXGroup;
 			children = (
-				0EC0B1370EEA634D0021647E /* Operations */,
 				0EC0B1090EEA4F5C0021647E /* TwitterHelper.h */,
 				0EC0B10A0EEA4F5C0021647E /* TwitterHelper.m */,
+				0E94082D0EFE2C7900962331 /* TwitterAccountInfo.h */,
+				0E94082E0EFE2C7900962331 /* TwitterAccountInfo.m */,
+				0E9408FF0EFE409600962331 /* TwitterMessageSender.h */,
+				0E9409000EFE409600962331 /* TwitterMessageSender.m */,
 				0EC0B1070EEA4F5C0021647E /* MPerson.h */,
 				0EC0B1080EEA4F5C0021647E /* MPerson.m */,
 				0EC0B1200EEA54F80021647E /* MPersonDataSource.h */,
 				0EC0B1210EEA54F80021647E /* MPersonDataSource.m */,
 			);
 			path = Twitter;
-			sourceTree = "<group>";
-		};
-		0EC0B1370EEA634D0021647E /* Operations */ = {
-			isa = PBXGroup;
-			children = (
-				0EC0B1340EEA5E490021647E /* THOFetchTimeLineForUserName.h */,
-				0EC0B1350EEA5E490021647E /* THOFetchTimeLineForUserName.m */,
-				0EC0B13C0EEA64460021647E /* THOUpdateStatusForUserName.h */,
-				0EC0B13D0EEA64460021647E /* THOUpdateStatusForUserName.m */,
-			);
-			path = Operations;
 			sourceTree = "<group>";
 		};
 		0EC0B1500EEA72940021647E /* ImageStore */ = {
@@ -228,6 +234,8 @@
 				0EA43D230EE2ECAB00E0CC2D /* PersonListViewController.xib */,
 				0EA43D250EE2ECB700E0CC2D /* PersonDetailViewController.xib */,
 				0EA43D3D0EE3FA0B00E0CC2D /* TwitterUsers.plist */,
+				0E2C40E60EF9322300CD8DFD /* StatusComposeViewController.xib */,
+				0E9407D20EFCF4EB00962331 /* InputAccountInfoViewController.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -290,6 +298,8 @@
 				0EA43D260EE2ECB700E0CC2D /* PersonDetailViewController.xib in Resources */,
 				0EA43D3E0EE3FA0B00E0CC2D /* TwitterUsers.plist in Resources */,
 				0EDBD2030EEC1C1700C1C393 /* Entitlements.plist in Resources */,
+				0E2C40E70EF9322300CD8DFD /* StatusComposeViewController.xib in Resources */,
+				0E9407D30EFCF4EB00962331 /* InputAccountInfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,12 +320,14 @@
 				0EC0B10B0EEA4F5C0021647E /* MPerson.m in Sources */,
 				0EC0B10C0EEA4F5C0021647E /* TwitterHelper.m in Sources */,
 				0EC0B1220EEA54F80021647E /* MPersonDataSource.m in Sources */,
-				0EC0B1360EEA5E490021647E /* THOFetchTimeLineForUserName.m in Sources */,
-				0EC0B13E0EEA64460021647E /* THOUpdateStatusForUserName.m in Sources */,
 				0EC0B1590EEA72940021647E /* HttpClient.m in Sources */,
 				0EC0B15A0EEA72940021647E /* ImageDownloader.m in Sources */,
 				0EC0B15B0EEA72940021647E /* ImageStore.m in Sources */,
 				0EC0B15C0EEA72940021647E /* StringHelper.m in Sources */,
+				0E2C40E30EF9317300CD8DFD /* StatusComposeViewController.m in Sources */,
+				0E9407CE0EFCF4B400962331 /* InputAccountInfoViewController.m in Sources */,
+				0E94082F0EFE2C7900962331 /* TwitterAccountInfo.m in Sources */,
+				0E9409010EFE409600962331 /* TwitterMessageSender.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,10 @@
 
 #import "PersonListViewController.h"
 #import "PersonDetailViewController.h"
+#import "StatusComposeViewController.h"
+#import "InputAccountInfoViewController.h"
 #import "MPerson.h"
+#import "TwitterAccountInfo.h"
 
 @implementation PersonListViewController
 
@@ -24,6 +27,7 @@
 
 - (void)dealloc
 {
+	NSLog(@"%@", @"PersonListViewController dealloc");
 	[personDataSource release];
     [super dealloc];
 }
@@ -45,7 +49,32 @@
 		self.imageStore = [[[ImageStore alloc] initWithDelegate:self] autorelease];
 	}
 	
-	[self.personDataSource reload];
+	if ([TwitterAccountInfo isTwitterAccountReady])
+	{
+		[self.personDataSource reload];
+	} else
+	{
+		[self openInputAccountInfoView:nil];
+	}
+}
+
+- (IBAction)openStatusComposeView:(id)sender
+{
+	StatusComposeViewController *viewController = [[StatusComposeViewController alloc]
+												   initWithNibName:@"StatusComposeViewController"
+												   bundle:nil];
+//	[[self navigationController] presentModalViewController:viewController animated:YES];
+	[self presentModalViewController:viewController animated:YES];
+	[viewController release];
+}
+
+- (IBAction)openInputAccountInfoView:(id)sender
+{
+	InputAccountInfoViewController *viewController = [[InputAccountInfoViewController alloc]
+													  initWithNibName:@"InputAccountInfoViewController"
+													  bundle:nil];
+	[[self navigationController] presentModalViewController:viewController animated:YES];
+	[viewController release];
 }
 
 #pragma mark UIViewController delegate
@@ -54,9 +83,21 @@
 {
     [super viewDidLoad];
 	self.title = @"People";
+	UIBarButtonItem *composeButton = [[UIBarButtonItem alloc]
+									  initWithBarButtonSystemItem:UIBarButtonSystemItemCompose
+									  target:self
+									  action:@selector(openStatusComposeView:)];
+	self.navigationItem.leftBarButtonItem = composeButton;
+	[composeButton release];
+	UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc]
+									  initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
+									  target:self
+									  action:@selector(refresh:)];
+	self.navigationItem.rightBarButtonItem = refreshButton;
+	[refreshButton release];
 }
 
-#pragma mark UITableView Protocol
+#pragma mark UITableView delegate
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {

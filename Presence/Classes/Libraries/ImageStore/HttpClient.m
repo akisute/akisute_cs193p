@@ -89,10 +89,6 @@
 	
 	conn = [[NSURLConnection alloc] initWithRequest:req delegate:self];
 	buf = [NSMutableData new];
-//	NSData *data = [[[NSData alloc] init] autorelease];
-//	NSURLResponse *res = [[[NSURLResponse alloc] init] autorelease];
-//	data = [NSURLConnection sendSynchronousRequest:req returningResponse:&res error:nil];
-//	NSLog(@"%p", data);
 }
 
 - (void)post:(NSString*)url parameters:(NSDictionary*)params

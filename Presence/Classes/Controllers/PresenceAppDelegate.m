@@ -35,9 +35,11 @@
 	[personDataSource release];
 	personDataSource = nil;
 	
-	[personListViewController refresh:nil];
 	[self.personNavigation pushViewController:personListViewController animated:NO];
 	[window addSubview:personNavigation.view];
+	
+	[personListViewController refresh:nil];
+	[personListViewController release];
     [window makeKeyAndVisible];
 }
 

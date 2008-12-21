@@ -21,4 +21,10 @@
 //Refreshes fetched datas to redraw the view.
 - (IBAction)refresh:(id)sender;
 
+/*! Opens the modal view to input tweets. */
+- (IBAction)openStatusComposeView:(id)sender;
+
+/*! Opens the modal view to input twitter account info. */
+- (IBAction)openInputAccountInfoView:(id)sender;
+
 @end

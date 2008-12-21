@@ -71,6 +71,7 @@
 
 - (void)imageDownloaderDidFail:(ImageDownloader*)sender error:(NSError*)error
 {
+	NSLog(@"imageDownloaderDidFail: %@", sender.url);
 	[[sender retain] autorelease];
 	[conns removeObjectForKey:sender.url];
 }

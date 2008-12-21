@@ -11,17 +11,26 @@
 #import "TwitterHelper.h"
 
 
-@interface NSObject (MPersonDataSourceDelegate)
+/*! Delegate declaration */
+@interface NSObject(MPersonDataSourceDelegate)
 - (void)mPersonDataSourceDidFinishLoadOfPerson:(MPerson*)person;
 - (void)mPersonDataSourceDidFailLoad;
 @end
 
+/*! Private methods declaration */
+@interface MPersonDataSource(Private)
+- (void)reloadPerson:(MPerson *)person;
+@end
+
+#pragma mark -
 
 @implementation MPersonDataSource
 
 @synthesize delegate;
 @synthesize personList;
 @synthesize operationQueue;
+
+#pragma mark Initialize and dealloc
 
 - (id)initWithContentsOfFile:(NSString *)aPath
 {
@@ -38,6 +47,9 @@
 			[person release];
 		}
 		self.personList = list;
+		
+		self.operationQueue = [[[NSOperationQueue alloc] init] autorelease];
+		[self.operationQueue setMaxConcurrentOperationCount:2];
 	}
 	return self;
 }
@@ -48,6 +60,34 @@
 	[self.personList release];
 	[super dealloc];
 }
+
+#pragma mark Methods
+
+- (void)reload
+{	
+	for (MPerson *person in self.personList)
+	{
+		person.isLoaded = NO;
+		NSInvocationOperation *op = [[NSInvocationOperation alloc]
+									 initWithTarget:self
+									 selector:@selector(reloadPerson:)
+									 object:person];
+		[self.operationQueue addOperation:op];
+		[op release];
+	}
+}
+
+- (BOOL)isAllLoaded
+{
+	BOOL loaded = YES;
+	for (MPerson *person in self.personList)
+	{
+		loaded &= person.isLoaded;
+	}
+	return loaded;
+}
+
+#pragma mark Private methods implementation
 
 - (void)reloadPerson:(MPerson *)person
 {
@@ -76,7 +116,10 @@
 			
 			if (person.profile_image_url == nil)
 			{
-				person.profile_image_url = [userDict objectForKey:@"profile_image_url"];
+				NSString *originalUrl = [userDict objectForKey:@"profile_image_url"];
+				NSString *encodedUrl = (NSString *) CFURLCreateStringByAddingPercentEscapes
+				(NULL, (CFStringRef) originalUrl, NULL, NULL, kCFStringEncodingUTF8);
+				person.profile_image_url = encodedUrl;
 			}
 			
 			if (person.texts == nil)
@@ -95,36 +138,6 @@
 		}
 	}
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-}
-
-- (void)reload
-{
-	if (!self.operationQueue)
-	{
-		self.operationQueue = [[[NSOperationQueue alloc] init] autorelease];
-		[self.operationQueue setMaxConcurrentOperationCount:1];
-	}
-	
-	for (MPerson *person in self.personList)
-	{
-		person.isLoaded = NO;
-		NSInvocationOperation *op = [[NSInvocationOperation alloc]
-									 initWithTarget:self
-									 selector:@selector(reloadPerson:)
-									 object:person];
-		[self.operationQueue addOperation:op];
-		[op release];
-	}
-}
-
-- (BOOL)isAllLoaded
-{
-	BOOL loaded = YES;
-	for (MPerson *person in self.personList)
-	{
-		loaded &= person.isLoaded;
-	}
-	return loaded;
 }
 
 @end
